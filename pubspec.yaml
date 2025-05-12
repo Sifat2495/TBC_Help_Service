@@ -1,0 +1,45 @@
+name: welfare
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.13.0
+  cloud_firestore: ^5.6.7
+  firebase_auth: ^5.5.3
+  carousel_slider: ^5.0.0
+  shared_preferences: ^2.5.3
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.11.0  # Add this line
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/TBC.jpeg
+    - assets/b1.jpeg
+    - assets/b2.jpeg
+    - assets/b3.jpeg
+    - assets/b4.jpeg
+    - assets/b5.jpg
+    - assets/b6.jpeg
+    - assets/bkash.png
+    - assets/rocket.png
+    - assets/nagad.png
+
+flutter_icons:
+  android: true
+  ios: false
+  image_path: "assets/TBC.jpeg"  # Path to the image file for the launcher icon
+  remove_alpha: true  # Optional, if your image has transparency and you want to remove it
