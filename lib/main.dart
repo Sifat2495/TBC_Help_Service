@@ -67,24 +67,16 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
-
-  // Logic to determine the initial screen based on stored preferences
   Future<Widget> _getInitialScreen() async {
     final prefs = await SharedPreferences.getInstance();
-
-    // Check if super admin is logged in
     final isSuperAdmin = prefs.getBool('isSuperAdminLoggedIn') ?? false;
     if (isSuperAdmin) {
       return const AdminDashboardScreen();
     }
-
-    // Check if a user is logged in
     final userId = prefs.getString('userId');
     if (userId != null) {
       return HomeScreen(userId: userId);
     }
-
-    // Default to login screen
     return const LoginScreen();
   }
 }

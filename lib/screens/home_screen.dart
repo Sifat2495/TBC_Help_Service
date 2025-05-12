@@ -30,8 +30,6 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 20),
-
-                  // 🌟 Humanitarian Message Section
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16.0),
                     child: Card(
@@ -52,19 +50,15 @@ class HomeScreen extends StatelessWidget {
                               style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
                             ),
                             const SizedBox(height: 20),
-
-                            // 🏦 Donation Info with Logos and Copy Button
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                // Bkash Logo
                                 Image.asset(
                                   'assets/nagad.png',
                                   width: 32,
                                   height: 32,
                                 ),
                                 const SizedBox(width: 10),
-                                // Rocket Logo
                                 Image.asset(
                                   'assets/rocket.png',
                                   width: 32,
@@ -85,7 +79,6 @@ class HomeScreen extends StatelessWidget {
                                   ),
                                 ),
                                 const SizedBox(width: 8),
-                                // Copy Icon
                                 IconButton(
                                   icon: Icon(Icons.copy, size: 20, color: Colors.green[800],),
                                   style: IconButton.styleFrom(
@@ -129,8 +122,6 @@ class HomeScreen extends StatelessWidget {
                   ),
 
                   const SizedBox(height: 20),
-
-                  // 🔘 Action Buttons
                   HomeSectionButton(
                     text: 'সাহায্যের জন্য আবেদন করুন',
                     icon: Icons.edit,

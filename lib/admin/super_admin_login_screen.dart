@@ -18,8 +18,6 @@ class _SuperAdminLoginScreenState extends State<SuperAdminLoginScreen> {
   void _loginSuperAdmin() async {
     String username = _usernameController.text.trim();
     String password = _passwordController.text.trim();
-
-    // Set your fixed username and password
     const String correctUsername = 'username';
     const String correctPassword = 'password';
 

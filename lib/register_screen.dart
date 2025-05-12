@@ -28,8 +28,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
     String mobile = _mobileController.text.trim();
     String pin = _pinController.text.trim();
     String confirmPin = _confirmPinController.text.trim();
-
-    // Validation
     if (name.isEmpty || mobile.isEmpty || pin.isEmpty || confirmPin.isEmpty) {
       setState(() {
         _errorMessage = 'সব ফিল্ড পূরণ করুন';
@@ -64,7 +62,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
     });
 
     try {
-      // Check if mobile already exists
       final existing = await _firestore
           .collection('users')
           .where('mobile', isEqualTo: mobile)

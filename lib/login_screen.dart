@@ -22,8 +22,6 @@ class _LoginScreenState extends State<LoginScreen> {
   void _loginUser() async {
     String mobile = _mobileController.text.trim();
     String pin = _pinController.text.trim();
-
-    // Validation
     if (mobile.isEmpty || pin.isEmpty) {
       setState(() {
         _errorMessage = 'মোবাইল নম্বর ও পিন দিতে হবে';
@@ -44,8 +42,6 @@ class _LoginScreenState extends State<LoginScreen> {
       });
       return;
     }
-
-    // Try login
     try {
       final query =
           await _firestore
@@ -248,8 +244,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
-
-                // Copyright Text outside and below the card
                 const SizedBox(height: 20),
                 Text(
                   'This application is developed by Astha Tech BD for TBC.',

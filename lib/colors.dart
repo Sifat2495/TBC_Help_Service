@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-// Define your custom colors
 const Color primaryColor = Color(0xFF11354e); // #11354e
 const Color secondaryColor = Color(0xFF13783e); // #13783e
 const Color accentColor = Color(0xFFe00d20); // #e00d20
